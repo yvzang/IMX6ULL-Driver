@@ -1,0 +1,46 @@
+#ifndef __ACM20608_H__
+#define __ACM20608_H__
+
+
+#define ACM20_WHO_AM_I						0X75
+#define ACM20_SAMPLE_DEV					0X19, 0X00
+#define ACM20_CONFIG						0X1A, 0X04
+#define ACM20_GYRO_CONFIG					0X1B, 0X18
+#define ACM20_ACCEL_CONFIG					0X1C, 0X18
+#define ACM20_ACCEL_CONFIG2					0X1D, 0X04
+#define ACM20_LP_MOD_CFG					0X1E, 0X00
+#define ACM20_FIFO_EN						0X23, 0X00
+#define ACM20_PWR_MGMT_1_RST				0X6B, 0X80
+#define ACM20_PWR_MGMT_1_CLK				0X6B, 0X01
+#define ACM20_PWR_MGMT_2					0X6C, 0X00
+
+
+
+#define ACM20_ACCEL_X_H						0X3B
+#define ACM20_ACCEL_X_L						0X3C
+#define ACM20_ACCEL_Y_H						0X3D
+#define ACM20_ACCEL_Y_L						0X3E
+#define ACM20_ACCEL_Z_H						0X3F
+#define ACM20_ACCEL_Z_L						0X40
+#define ACM20_TEMP_H						0X41
+#define ACM20_TEMP_L						0X42
+#define ACM20_GYRO_X_H						0X43
+#define ACM20_GYRO_X_L						0X44
+#define ACM20_GYRO_Y_H						0X45
+#define	ACM20_GYRO_Y_L						0X46
+#define ACM20_GYRO_Z_H						0X47
+#define ACM20_GYRO_Z_L						0X48
+
+#define ACM20_REG_START						ACM20_ACCEL_X_H
+#define ACM20_REG_LEN						(ACM20_GYRO_Z_L-ACM20_ACCEL_X_H+1)
+
+#define ACM20608_READ_ACCEL_X				0x00
+#define ACM20608_READ_ACCEL_Y				0X01
+#define ACM20608_READ_ACCEL_Z				0X02
+#define ACM20608_READ_TEMP					0x03
+#define ACM20608_READ_GYRO_X				0x04
+#define ACM20608_READ_GYRO_Y				0x05
+#define ACM20608_READ_GYRO_Z				0x06
+
+
+#endif
